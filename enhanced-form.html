@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+    
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Form Example</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#services">List</a></li>
+            <li><a href="#pricing">Table</a></li>
+            <li><a href="#about">Media</a></li>
+            <li><a href="#contact">Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </section>
+
+    <section id ="pricing">
+        <h2>Pricing Table</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Service</th>
+                <th>Duration</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>3 weeks</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Graphic Design</td>
+                <td>2 weeks</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Digital Marketing</td>
+                <td>1 month</td>
+                <td>$400</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="about">
+        <h2>About Us (Media)</h2>
+        <figure>
+            <img src="https://via.placeholder.com/800x300" alt="Sample Banner">
+            <figcaption>We create digital solutions that bring results.</figcaption>
+        </figure>
+
+        <h3>Watch Our Intro Video</h3>
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Listen to Our Audio Message</h3>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{10,15}$" required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="nonbinary">Non-Binary</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="contact-email" name="contact_method" value="email" required>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </div>
+
+            <div>
+                <label for="website">Website (optional):</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </div>
+
+            <div>
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+            </div>
+
+            <div>
+                <label for="ref-code">Referral Code:</label>
+                <input type="text" id="ref-code" name="ref_code" value="PROMO2025" readonly>
+            </div>
+
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the terms and conditions</label>
+            </div>
+
+            <div>
+                <button type="submit">Submit Form</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Demo | All rights reserved</p>
+</footer>
+
+</body>
+</html>
